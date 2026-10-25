@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Meu joelho — guia de recuperação</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4eee0;--paper:#fffaf0;--ink:#1b2a2f;--muted:#4a5a5f;--line:#d6cab0;--brand:#0f5c63;--brand-ink:#fff;--soft:#e7efe9;--focus:#1a56db;--danger:#a4160f;--danger-bg:#fde8e6;--warn:#6b4e00;--warn-bg:#fff1c2;--ok-bg:#dff1e4;
+--c-healthy:#1b7a43;--c-healthy-f:rgba(46,139,87,.2);--c-rebuilt:#1b55c4;--c-rebuilt-f:rgba(47,111,220,.28);--c-repaired:#c85200;--c-repaired-f:rgba(232,114,12,.3);--c-partial:#8a6700;--c-partial-f:rgba(240,190,0,.38);--c-removed:#5f656d;--c-removed-f:rgba(140,146,156,.3);--c-scar:#7a3fc4;--c-scar-f:rgba(142,91,208,.25);--c-implant:#0d2358;--c-implant-f:rgba(13,35,88,.6);--c-torn:#b0104c;--c-torn-f:rgba(194,24,91,.22);--glow:#ff8a00;--halo:#fffaf0;
+--f-head:'Fraunces',Georgia,serif;--f-body:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+:root[data-theme=dark]{--bg:#0f181b;--paper:#172428;--ink:#eaf2f0;--muted:#a9bcbe;--line:#2e4348;--brand:#63cbc3;--brand-ink:#04282b;--soft:#1f3237;--focus:#8ab4ff;--danger:#ffb4ab;--danger-bg:#4a1b17;--warn:#ffe08a;--warn-bg:#46380c;--ok-bg:#1c3a29;
+--c-healthy:#5fd18c;--c-healthy-f:rgba(95,209,140,.2);--c-rebuilt:#7fb0ff;--c-rebuilt-f:rgba(90,150,255,.3);--c-repaired:#ff9a4d;--c-repaired-f:rgba(255,154,77,.3);--c-partial:#ffd84d;--c-partial-f:rgba(255,216,77,.3);--c-removed:#b4bac3;--c-removed-f:rgba(180,186,195,.25);--c-scar:#c9a0ff;--c-scar-f:rgba(201,160,255,.25);--c-implant:#9db8ff;--c-implant-f:rgba(120,150,255,.5);--c-torn:#ff7aa8;--c-torn-f:rgba(255,122,168,.25);--glow:#ffb066;--halo:#172428}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 var(--f-body);overflow-x:hidden}
+h1,h2,h3{font-family:var(--f-head);line-height:1.2;margin:.2em 0 .4em}h2{font-size:1.45rem}h3{font-size:1.1rem}
+p{margin:.4em 0}.muted{color:var(--muted)}.sm{font-size:.88rem}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.top{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:var(--paper);border-bottom:1px solid var(--line)}
+.top h1{font-size:1.2rem;margin:0}
+.top .sub{font-size:.8rem;color:var(--muted);display:block;font-family:var(--f-body);font-weight:400}
+main{max-width:760px;margin:0 auto;padding:12px 16px 170px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px;margin:12px 0}
+.aviso{background:var(--warn-bg);color:var(--warn);border-left:6px solid var(--warn);border-radius:10px;padding:8px 12px;font-size:.92rem;margin:8px 0}
+.foot{text-align:center;color:var(--muted);font-size:.85rem;margin:22px 0 6px;padding-top:10px;border-top:1px dashed var(--line)}
+.btn{min-height:48px;padding:10px 16px;border-radius:14px;border:2px solid var(--brand);background:var(--paper);color:var(--brand);font-weight:700}
+.btn.pri{background:var(--brand);color:var(--brand-ink)}.btn.big{min-height:60px;font-size:1.1rem;width:100%}
+.btn.danger{border-color:var(--danger);color:var(--danger)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.row>*{flex:1 1 auto}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.badge{display:inline-block;background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn);border-radius:999px;font-size:.72rem;padding:1px 8px;font-weight:700;vertical-align:middle;white-space:nowrap}
+.badge.ok{background:var(--ok-bg);color:var(--c-healthy);border-color:var(--c-healthy)}
+.resumo{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center;background:linear-gradient(160deg,var(--paper),var(--soft))}
+.resumo b{display:block;font:700 1.9rem/1.1 var(--f-head);color:var(--brand)}.resumo span{font-size:.82rem;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{min-height:44px;padding:6px 14px;border-radius:999px;border:2px solid var(--line);background:var(--paper)}
+.chip[aria-pressed=true],.chip[aria-selected=true],.chip.on{background:var(--brand);color:var(--brand-ink);border-color:var(--brand);font-weight:700}
+.kneewrap{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:6px;background-image:radial-gradient(var(--line) 1px,transparent 1px);background-size:18px 18px}
+svg.knee{display:block;width:100%;max-height:74vh;height:auto}
+.el{cursor:pointer;outline:none}.el:focus-visible path.sh,.el:focus-visible path.ln{stroke:var(--focus)!important;stroke-width:5}
+.el:hover .sh,.el:hover .ln{filter:brightness(1.15)}
+.sh{stroke-width:2}.ln{fill:none;stroke-linecap:round}.hit{fill:none;stroke:transparent;stroke-width:18}
+.sh.st-healthy{fill:var(--c-healthy-f);stroke:var(--c-healthy)}.sh.st-rebuilt{fill:var(--c-rebuilt-f);stroke:var(--c-rebuilt);stroke-width:3.5}
+.sh.st-repaired{fill:var(--c-repaired-f);stroke:var(--c-repaired);stroke-dasharray:6 3;stroke-width:2.6}.sh.st-partial{fill:var(--c-partial-f);stroke:var(--c-partial);stroke-dasharray:4 3}
+.sh.st-removed{fill:url(#pRem);stroke:var(--c-removed)}.sh.st-scar{fill:url(#pScar);stroke:var(--c-scar)}
+.sh.st-implant{fill:var(--c-implant-f);stroke:var(--c-implant);stroke-width:3.5}.sh.st-torn{fill:url(#pTorn);stroke:var(--c-torn);stroke-width:2.5}
+.ln.st-healthy{stroke:var(--c-healthy)}.ln.st-rebuilt{stroke:var(--c-rebuilt)}.ln.st-repaired{stroke:var(--c-repaired);stroke-dasharray:7 4}.ln.st-partial{stroke:var(--c-partial);stroke-dasharray:2 6}
+.ln.st-removed{stroke:var(--c-removed);stroke-dasharray:10 5}.ln.st-scar{stroke:var(--c-scar);stroke-dasharray:1 7}.ln.st-implant{stroke:var(--c-implant)}.ln.st-torn{stroke:var(--c-torn);stroke-dasharray:4 12}
+.ln.center{stroke:var(--paper);stroke-width:1.6;stroke-dasharray:none}
+.sh.ghost{fill:none!important;stroke:var(--muted)!important;stroke-dasharray:4 4}
+.stitch{fill:none;stroke:var(--c-repaired);stroke-width:2.2;stroke-linecap:round;pointer-events:none}
+.lab{font:700 11px var(--f-body);fill:var(--ink);paint-order:stroke;stroke:var(--halo);stroke-width:3.5px;stroke-linejoin:round;pointer-events:none}
+.ic{font:12px var(--f-body);pointer-events:none;fill:var(--ink)}.ic.w{fill:#fff}
+.insetbg{fill:var(--paper);stroke:var(--line)}.plateau{fill:none;stroke:var(--muted);stroke-dasharray:3 3}
+.hl{animation:glow 1.8s ease-in-out infinite}.hl .sh,.hl .ln{stroke-width:5}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 0 var(--glow))}50%{filter:drop-shadow(0 0 7px var(--glow)) drop-shadow(0 0 3px var(--glow))}}
+.pulsedot{display:inline-block;width:12px;height:12px;border-radius:50%;background:var(--glow);margin-right:6px;animation:pd 1.6s ease-in-out infinite;vertical-align:middle}
+@keyframes pd{0%,100%{transform:scale(.8);opacity:.6}50%{transform:scale(1.25);opacity:1}}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px;font-size:.85rem}.legend div{display:flex;gap:8px;align-items:center}.legend small{color:var(--muted);display:block;line-height:1.1}
+.tl{display:flex;gap:10px;overflow-x:auto;padding:8px 2px 12px;scroll-snap-type:x proximity}
+.mk{flex:0 0 150px;scroll-snap-align:center;text-align:left;border:2px solid var(--line);background:var(--paper);border-radius:14px;padding:8px 10px;min-height:92px;position:relative}
+.mk[aria-selected=true]{border-color:var(--brand);background:var(--soft);box-shadow:0 3px 0 var(--brand)}
+.mk b{display:block;font-size:.8rem;color:var(--brand)}.mk span{font-size:.9rem;line-height:1.2;display:block}
+.cmp{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper)}.cmp .b{position:absolute;inset:0;clip-path:inset(0 0 0 var(--x,50%));background:var(--paper)}
+.cmp .tagl,.cmp .tagr{position:absolute;top:6px;font-size:.75rem;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:1px 6px;z-index:2}.tagl{left:6px}.tagr{right:6px}
+input[type=range]{width:100%;height:36px;accent-color:var(--brand)}
+input[type=text],input[type=number],input[type=date],select,textarea{width:100%;min-height:44px;padding:8px 10px;border:2px solid var(--line);border-radius:10px;background:var(--paper)}
+textarea{min-height:80px}
+label.f{display:block;margin:8px 0;font-weight:700;font-size:.92rem}label.f>*:not(span){font-weight:400;margin-top:4px}
+.task{border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin:10px 0;background:var(--paper)}.task.done{background:var(--ok-bg);border-color:var(--c-healthy)}
+.task h3{margin:0;font-size:1.02rem;flex:1}.th{display:flex;gap:8px;align-items:flex-start}.th .ico{font-size:1.5rem;line-height:1.2}
+.cnt{font-weight:700;white-space:nowrap}
+.chk{min-width:56px;min-height:48px;border:2px solid var(--brand);border-radius:12px;background:var(--paper);font-weight:700}.chk[aria-pressed=true]{background:var(--brand);color:var(--brand-ink)}
+details{margin:6px 0}summary{cursor:pointer;font-weight:700;min-height:36px;padding:6px 0}
+.alert{border-radius:12px;padding:10px 12px;margin:10px 0}.alert.red{background:var(--danger-bg);color:var(--danger);border:2px solid var(--danger)}.alert.warn{background:var(--warn-bg);color:var(--warn);border:2px solid var(--warn)}
+.day{display:grid;grid-template-columns:62px 1fr auto;gap:8px;align-items:center;width:100%;text-align:left;padding:10px;border:2px solid var(--line);border-radius:12px;background:var(--paper);margin:6px 0;min-height:60px}
+.day.today{border-color:var(--brand);box-shadow:0 0 0 3px var(--soft)}.day b{font-family:var(--f-head)}
+.bar{height:16px;border-radius:10px;background:var(--soft);overflow:hidden;border:1px solid var(--line)}.bar i{display:block;height:100%;background:repeating-linear-gradient(45deg,var(--brand),var(--brand) 8px,color-mix(in srgb,var(--brand) 75%,#fff) 8px,color-mix(in srgb,var(--brand) 75%,#fff) 16px)}
+.bdg{display:flex;gap:10px;align-items:flex-start;padding:8px;border:1px dashed var(--line);border-radius:12px;margin:6px 0}.bdg.on{border-style:solid;border-color:var(--c-healthy);background:var(--ok-bg)}.bdg .ico{font-size:1.8rem;filter:grayscale(1);opacity:.5}.bdg.on .ico{filter:none;opacity:1}
+.mstone{display:flex;gap:10px;align-items:center;padding:8px;border-left:5px solid var(--line);margin:6px 0;background:var(--paper);border-radius:0 10px 10px 0}.mstone.got{border-color:var(--c-healthy)}.mstone.rel{border-color:var(--c-rebuilt)}
+.no{display:flex;gap:10px;padding:10px;border:2px solid var(--danger);border-radius:12px;margin:8px 0;background:var(--paper)}.no .ico{font-size:1.6rem}
+.rows{list-style:none;padding:0;margin:8px 0}.rows li{display:grid;grid-template-columns:130px 52px 1fr;gap:6px;align-items:center;padding:4px 0;border-bottom:1px dotted var(--line);font-size:.88rem}
+.lv{display:flex;gap:2px}.lv i{width:12px;height:12px;border:1px solid var(--ink);border-radius:3px}.lv i.on{background:var(--ink)}
+.fab{position:fixed;right:12px;bottom:calc(74px + env(safe-area-inset-bottom));z-index:30;background:var(--danger);color:#fff;border:2px solid #fff;border-radius:999px;min-height:48px;padding:8px 16px;font-weight:700;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+:root[data-theme=dark] .fab{background:#b3261e}
+nav.bot{position:fixed;left:0;right:0;bottom:0;z-index:25;display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border-top:2px solid var(--line);padding-bottom:env(safe-area-inset-bottom)}
+nav.bot button{border:0;background:none;min-height:62px;padding:6px 2px;font-size:.78rem;font-weight:700;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:2px}
+nav.bot button span{font-size:1.35rem;line-height:1}nav.bot button[aria-current=page]{color:var(--brand);box-shadow:inset 0 4px 0 var(--brand)}
+dialog{border:0;border-radius:20px;max-width:min(680px,96vw);width:100%;max-height:92vh;padding:16px;background:var(--paper);color:var(--ink);box-shadow:0 10px 40px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(0,0,0,.55)}
+.stbox{display:flex;align-items:center;gap:8px;margin:6px 0}
+.qrow{display:grid;grid-template-columns:34px 1fr auto;gap:8px;align-items:start;margin:8px 0}.qrow input[type=checkbox]{width:28px;height:28px;margin-top:10px}
+.note{border-left:4px solid var(--brand);padding:4px 10px;margin:6px 0;background:var(--soft);border-radius:0 8px 8px 0}
+table.t{border-collapse:collapse;width:100%;font-size:.85rem}table.t td,table.t th{border:1px solid var(--line);padding:3px 6px;text-align:left}
+@media(min-width:700px){.legend{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:380px){.rows li{grid-template-columns:100px 50px 1fr}.resumo b{font-size:1.5rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.hl .sh,.hl .ln{stroke-width:6}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<pattern id="pRem" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" style="fill:var(--c-removed-f)"/><line x1="0" y1="0" x2="0" y2="7" style="stroke:var(--c-removed);stroke-width:2.4"/></pattern>
+<pattern id="pScar" width="7" height="7" patternUnits="userSpaceOnUse"><rect width="7" height="7" style="fill:var(--c-scar-f)"/><circle cx="3.5" cy="3.5" r="1.7" style="fill:var(--c-scar)"/></pattern>
+<pattern id="pTorn" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" style="fill:var(--c-torn-f)"/><path d="M0 0L8 8M8 0L0 8" style="stroke:var(--c-torn);stroke-width:1.5"/></pattern>
+<pattern id="pRed" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><rect width="4" height="8" fill="#c62828"/></pattern>
+</defs></svg>
+<header class="top"><h1>Meu joelho<span class="sub">Joelho esquerdo · pós-cirurgia de menisco</span></h1><button class="chip" id="theme" aria-label="Alternar modo claro e escuro">🌓 Tema</button></header>
+<main id="view" tabindex="-1"></main>
+<button class="fab" id="fab" aria-haspopup="dialog">🚨 Sinais de alerta</button>
+<nav class="bot" aria-label="Navegação principal">
+<button data-nav="home"><span aria-hidden="true">🦴</span>Início</button>
+<button data-nav="hist"><span aria-hidden="true">🕰️</span>Histórico</button>
+<button data-nav="acomp"><span aria-hidden="true">✅</span>Acompanhamento</button>
+<button data-nav="perg"><span aria-hidden="true">❓</span>Perguntas</button>
+</nav>
+<dialog id="dlg" aria-modal="true"></dialog>
+<div id="live" class="sr" aria-live="polite" style="position:absolute;left:-9999px"></div>
+<script>
+(function(){'use strict';
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+/* ===== datas ===== */
+const pad=n=>String(n).padStart(2,'0'),ds=d=>d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+const pd=s=>{const a=s.split('-').map(Number);return new Date(a[0],a[1]-1,a[2])};
+const today=()=>ds(new Date()),addDays=(s,n)=>{const d=pd(s);d.setDate(d.getDate()+n);return ds(d)};
+const diff=(a,b)=>Math.round((pd(b)-pd(a))/864e5),br=s=>{const a=s.split('-');return a[2]+'/'+a[1]+'/'+a[0]};
+const WD=['dom','seg','ter','qua','qui','sex','sáb'],wd=s=>WD[pd(s).getDay()],START='2026-10-24';
+/* ===== dados e armazenamento ===== */
+const KEY='joelho-app-v1';let mem=null;
+function defaults(){return{v:1,theme:null,
+plan:{surgery:'2026-10-09',returnVisit:'2026-10-30',returnOk:false,waitFrom:'2026-11-16',afterText:'Aguardando orientação do médico',
+flex:[{from:'2026-10-23',max:30,ok:true},{from:'2026-11-02',max:60,ok:false},{from:'2026-11-09',max:90,ok:false}],
+weight:'Pode apoiar de leve SOMENTE com o imobilizador. Nunca apoiar o pé sem o imobilizador.',weightOk:false,
+pending:[{t:'Apoio de carga (quando e quanto)',ok:false},{t:'Retirada do restante dos pontos',ok:false},{t:'Retirada do imobilizador',ok:false},{t:'Profilaxia de trombose (remédio)',ok:false},{t:'Início da fisioterapia',ok:false},{t:'Liberação para dirigir e trabalhar',ok:false}]},
+times:{ext:3,quad:4,flex:3,ankle:4,ice:4,dress:1,imob:2,meds:1,reg:1},iceMin:20,timesOk:false,logs:{},mapState:{},
+questions:['Quando posso apoiar com carga e quanto?','Quando tiram o restante dos pontos?','Quando tiro o imobilizador?','Preciso de remédio para trombose?','Qual técnica de sutura foi usada e qual é o protocolo completo?','A banda do LCA foi tratada?','Há alguma restrição por causa da cirurgia de Lemaire?','Quando posso dirigir, trabalhar e começar a fisioterapia?','Corrigir no sumário de alta o ano da reconstrução do LCA (foi 2023, não 2024).'].map(t=>({t,a:'',done:false}))}}
+function norm(o){const d=defaults();if(!o||typeof o!=='object')return d;
+return Object.assign({},d,o,{plan:Object.assign({},d.plan,o.plan||{}),times:Object.assign({},d.times,o.times||{}),logs:(o.logs&&typeof o.logs==='object')?o.logs:{},mapState:(o.mapState&&typeof o.mapState==='object')?o.mapState:{},questions:Array.isArray(o.questions)?o.questions:d.questions})}
+let S;try{S=norm(JSON.parse(localStorage.getItem(KEY)||'null'))}catch(e){S=defaults()}
+function save(){const j=JSON.stringify(S);mem=j;try{localStorage.setItem(KEY,j)}catch(e){}}
+/* ===== plano ===== */
+function limitFor(d){const st=S.plan.flex.filter(x=>x.from).sort((a,b)=>a.from<b.from?-1:1);let c=st[0]||{max:0,ok:false};for(const x of st)if(x.from<=d)c=x;return{max:+c.max||0,ok:!!c.ok,waiting:!!S.plan.waitFrom&&d>=S.plan.waitFrom}}
+const badge=ok=>ok?'<span class="badge ok">confirmado</span>':'<span class="badge">confirmar com o médico</span>';
+const AV='Siga sempre o que seu cirurgião e seu fisioterapeuta mandarem. Em caso de dúvida, pergunte a eles.';
+const aviso=()=>`<p class="aviso" role="note">⚠️ ${AV}</p>`;
+const foot=()=>'<p class="foot">Material educativo. Não substitui orientação médica.</p>';
+/* ===== tarefas ===== */
+const T=[
+{id:'ext',ic:'🦵',n:'Estender o joelho por completo (meta: 0°, joelho reto)',mv:'ext',
+how:['Deite de costas, com a perna apoiada só pelo calcanhar.','Deixe o joelho livre, sem nada embaixo dele.','Relaxe e deixe o peso da perna esticar o joelho.','Sem empurrar com as mãos e sem dor forte.'],
+why:'A cicatriz de 1,2 cm na frente do LCA pode travar os últimos graus. Perder a extensão atrapalha o andar por anos.',care:'Não force. Se a dor for forte, pare e avise o fisioterapeuta.'},
+{id:'quad',ic:'💪',n:'Contração do quadríceps (apertar a coxa, 5 segundos)',mv:'quad',
+how:['Fique deitado, com a perna esticada.','Aperte a coxa e empurre o joelho para baixo.','Segure 5 segundos e solte.','Repita várias vezes, respirando normalmente.'],
+why:'Evita que o músculo da frente da coxa "apague", sem mexer o joelho.',care:'O joelho não se mexe. Se doer forte, pare.'},
+{id:'flex',ic:'📐',n:'Dobrar o joelho até o limite do dia',mv:'flex',
+how:['Sentado ou deitado, deslize o calcanhar devagar, aproximando-o do bumbum.','Pare no ângulo do limite do dia, ou antes se doer.','Sem força, sem balançar e sem dor forte.','Volte devagar.'],
+why:'A articulação precisa de movimento para nutrir a cartilagem e evitar rigidez, mas a sutura do menisco precisa de um limite.',care:'Nunca passe do limite da semana. Se passar, avise o médico.'},
+{id:'ankle',ic:'🦶',n:'Mexer o tornozelo e o pé (para cima e para baixo)',
+how:['Deitado, leve a ponta do pé para cima e depois para baixo.','Faça devagar, várias vezes.'],why:'Ajuda a circulação e reduz o risco de trombose.',care:'Dor, inchaço ou calor na panturrilha: procure o pronto-socorro.'},
+{id:'ice',ic:'🧊',n:'Gelo e elevação da perna acima do coração',
+how:['Deite com a perna mais alta que o coração.','Coloque o gelo envolto em um pano, nunca direto na pele.','Mantenha pelo tempo que o médico orientou (veja o tempo nos Ajustes).','Não molhe o curativo.'],why:'Reduz inchaço e dor.',care:'Se a pele ficar muito vermelha, dormente ou doer, tire o gelo.'},
+{id:'dress',ic:'🩹',n:'Curativo',
+how:['Lave bem as mãos.','Limpe com água e sabão ou soro.','Seque com cuidado.','Cubra com gaze e micropore (orientação do hospital).'],why:'Mantém a ferida limpa e ajuda a evitar infecção.',care:'Pus, cheiro forte ou febre acima de 39°: pronto-socorro.'},
+{id:'imob',ic:'🦿',n:'Usar o imobilizador como orientado',cl:['Ao dormir','Ao andar'],
+how:['Use o imobilizador como foi orientado.','Marque quando usou ao dormir e ao andar.','Nunca apoie o pé sem ele.'],why:'Protege o menisco costurado e o joelho enquanto cicatrizam.',care:'Não tire por conta própria. Só o médico libera.'},
+{id:'meds',ic:'💊',n:'Remédios conforme a receita (registro)',
+how:['Tome só como está na receita (dipirona e tramadol de resgate).','Marque aqui para lembrar que cuidou do registro.','Este app não indica doses.'],why:'Controlar a dor ajuda você a fazer os exercícios com segurança.',care:'Não misture tramadol com álcool. Dor que não passa com o remédio: veja os Sinais de alerta.'},
+{id:'reg',ic:'📝',n:'Registrar dor, inchaço e ângulo do dia',how:['Anote a dor de 0 a 10.','Marque o inchaço.','Anote o maior ângulo que atingiu, se medir.'],why:'Ajuda você e seus médicos a verem a evolução.',care:'Anote sempre com honestidade, mesmo quando o dia foi ruim.'}];
+const TM=Object.fromEntries(T.map(t=>[t.id,t]));
+const cnt=(t,d)=>{const l=S.logs[d]||{};return(l.done&&l.done[t])||0};
+function tDone(t,d){const l=S.logs[d]||{};if(t.id==='reg')return l.pain!=null&&l.swell!=null;return cnt(t.id,d)>=(S.times[t.id]||1)}
+const overDay=d=>{const l=S.logs[d]||{};return l.angle!=null&&l.angle>limitFor(d).max};
+function dayInfo(d){const done=T.filter(t=>tDone(t,d)).length,over=overDay(d);let pts=0;T.forEach(t=>{if(tDone(t,d)&&!(t.id==='flex'&&over))pts+=10});const all=done===T.length;if(all&&!over)pts+=30;return{done,total:T.length,over,all,ok:all&&!over,pts}}
+function allDays(){const a=[],t=today();for(let d=START;d<=t;d=addDays(d,1))a.push(d);return a}
+function runMax(pred){let m=0,r=0;allDays().forEach(d=>{if(pred(d)){r++;m=Math.max(m,r)}else r=0});return m}
+function totals(){let pts=0;Object.keys(S.logs).forEach(d=>{pts+=dayInfo(d).pts});let st=0,d=today();if(!dayInfo(d).ok)d=addDays(d,-1);while(d>=START&&dayInfo(d).ok){st++;d=addDays(d,-1)}return{pts,st}}
+const BADGES=[
+{id:'first',ic:'🌱',n:'Primeiro dia completo',d:'Cumpriu todas as tarefas de um dia.',f:()=>runMax(d=>dayInfo(d).ok)>=1},
+{id:'ext3',ic:'📏',n:'Extensão em dia',d:'Extensão completa feita 3 dias seguidos.',f:()=>runMax(d=>tDone(TM.ext,d))>=3},
+{id:'ice3',ic:'🧊',n:'Gelo em dia',d:'Gelo e elevação 3 dias seguidos.',f:()=>runMax(d=>tDone(TM.ice,d))>=3},
+{id:'week',ic:'🏅',n:'Semana completa',d:'7 dias completos seguidos.',f:()=>runMax(d=>dayInfo(d).ok)>=7},
+{id:'honest',ic:'🤝',n:'Registro honesto',d:'Anotou a dor mesmo num dia ruim (6 ou mais).',f:()=>Object.values(S.logs).some(l=>l.pain!=null&&l.pain>=6)},
+{id:'reg5',ic:'📒',n:'Diário atento',d:'Registrou dor e inchaço em 5 dias.',f:()=>allDays().filter(d=>tDone(TM.reg,d)).length>=5}];
+const MAP=[{id:'m30',t:'30° de dobra',deg:30},{id:'m60',t:'60° de dobra',deg:60},{id:'m90',t:'90° de dobra',deg:90},{id:'carga',t:'Apoio de carga liberado'},{id:'imob',t:'Retirada do imobilizador'},{id:'muleta',t:'Andar sem muleta'},{id:'fisio',t:'Início da fisioterapia'},{id:'dir',t:'Dirigir e voltar ao trabalho'}];
+function mapStat(m){const t=today();if(m.deg){const rel=S.plan.flex.some(x=>x.from<=t&&+x.max>=m.deg);const got=Object.keys(S.logs).some(d=>{const l=S.logs[d];return l.angle!=null&&l.angle>=m.deg&&l.angle<=limitFor(d).max});return got?'got':rel?'rel':'lock'}
+const s=S.mapState[m.id]||{};return s.done?'got':s.rel?'rel':'lock'}
+const MSG=['Hoje o trabalho é cuidar. Um passo de cada vez.','Constância vale mais que pressa.','Respeitar o limite também é treinar.','Boa. Cuidar do joelho é um trabalho diário.','Se o dia foi difícil, anote com honestidade. Isso também conta.'];
+const NO=[['📐','Dobrar o joelho acima do limite da semana','A sutura do menisco ainda está cicatrizando. Dobrar demais pressiona a parte de trás dele e pode abrir a sutura.'],
+['🦿','Apoiar o pé sem o imobilizador, ou tirar o imobilizador por conta própria','Ele protege o menisco e o joelho. Só o médico decide quando tirar.'],
+['🔄','Girar o corpo com o pé apoiado no chão','O giro com o pé preso foi o que machucou o joelho em 2023 e pode forçar o menisco e o LCA.'],
+['🧎','Agachar fundo, sentar de pernas cruzadas ou sobre os calcanhares','Essas posições dobram muito o joelho e apertam o menisco costurado.'],
+['🍗','Fazer força com os músculos de trás da coxa antes da liberação','Eles puxam a parte de trás do menisco costurado.'],
+['🚭','Fumar e misturar tramadol com álcool','O cigarro pode atrapalhar a cicatrização do menisco. Álcool com tramadol é perigoso.'],
+['🚗','Dirigir ou voltar ao trabalho sem liberação','Você pode não ter controle e reflexo seguros com o joelho imobilizado e com remédios.']];
+/* ===== cartões das estruturas: nome, o que faz, o que aconteceu, o que foi feito, o que fazer/evitar ===== */
+const C={
+femur:['Fêmur (osso da coxa)','É o osso da coxa. Forma a parte de cima do joelho.','Saudável. Em 2023 teve um edema ósseo (contusão) que resolveu. A ressonância de 03/09/2026 viu um edema leve perto do túnel do enxerto.','O botão que prende o enxerto do LCA (2023) fica nele. A âncora do Lemaire (2026) também.','Evite quedas e impacto.'],
+tibia:['Tíbia (osso da perna)','Osso principal da perna. Forma a parte de baixo da articulação, o "planalto".','Saudável. Teve contusão em 2023, que resolveu. Tem a sequela de Osgood-Schlatter, da adolescência.','O parafuso que prende o enxerto do LCA (2023) está nela.','Evite pancadas na frente do joelho e da perna.'],
+fibula:['Fíbula','Osso fino do lado de fora da perna. Segura o ligamento colateral lateral.','Saudável.','Nada foi feito.','Evite apertar ou bater na parte de cima, do lado de fora da perna.'],
+patela:['Patela (rótula)','Funciona como uma polia: ajuda o quadríceps a esticar o joelho.','Pequeno desgaste na cartilagem (grau II em 2023, grau I em 2026). O sulco onde ela desliza é mais raso que o normal (sulco "displásico") e ela fica um pouco alta ("patela alta"). Isso deixa a frente do joelho mais sensível.','Em 2023 foi feita uma limpeza da cartilagem (condroplastia).','Evite agachar fundo e ajoelhar. Dor na frente do joelho: avise o fisioterapeuta.'],
+osgood:['Tuberosidade da tíbia (Osgood-Schlatter)','É o ponto da tíbia onde o tendão da patela se prende.','Tem a sequela de Osgood-Schlatter, uma inflamação da adolescência que deixou um "calombo".','Nada foi feito.','Evite ajoelhar e bater ali. Pode doer ao apoiar.'],
+cartilagem:['Cartilagem','Camada lisa que cobre as pontas dos ossos. Deixa o joelho deslizar sem atrito.','Preservada. Só há um pequeno desgaste na patela.','Em 2023, limpeza da cartilagem da patela.','Mexer o joelho dentro do limite ajuda a cartilagem a se nutrir.'],
+menMed:['Menisco medial (do lado de dentro)','É uma almofada em forma de "C". Absorve impacto e estabiliza o joelho.','Parte foi retirada em 2023. Em 2026 teve uma lesão em "alça de balde": um grande pedaço soltou e foi para o meio do joelho.','Foi recolocado e COSTURADO em 09/10/2026, com pontos internos. Está em cicatrização.','É a estrutura mais importante a proteger agora. Respeite o limite de dobra, não gire o corpo com o pé no chão, não agache fundo, não sente sobre os calcanhares e não faça força com a parte de trás da coxa antes da liberação.'],
+menLat:['Menisco lateral (do lado de fora)','Almofada do lado de fora do joelho. Absorve impacto.','Saudável durante todo o histórico.','Nada foi feito.','Proteja o joelho todo: evite giros com o pé no chão.'],
+lca:['LCA (ligamento cruzado anterior)','Impede a tíbia de escorregar para frente e ajuda a controlar o giro.','Rompeu em 2023 e foi reconstruído em 03/08/2023 com tendões da parte de trás da coxa (semitendíneo e grácil). Em 2026 a ressonância mostra o enxerto íntegro. Na cirurgia de 2026 foi descrita uma lesão parcial, com uma banda rompida.','Em 2026 não houve procedimento no LCA.','Evite giros. Estender o joelho por completo é importante. Pergunte ao médico sobre a banda rompida.'],
+fixacao:['Fixação do enxerto (botão e parafuso)','São as peças que seguram o enxerto do LCA no lugar.','Foram colocadas na cirurgia de 2023: botão no fêmur e parafuso na tíbia.','Nada novo em 2026.','Nada especial. Avise se sentir dor localizada ali.'],
+lcp:['LCP (ligamento cruzado posterior)','Impede a tíbia de escorregar para trás.','Saudável.','Nada foi feito.','Evite quedas e batidas na frente da perna.'],
+fibrose:['Cicatriz na frente do enxerto do LCA','Tecido de cicatriz (fibrose) que se formou diante do enxerto.','Em 2025 era um nódulo de 0,8 cm (provável cicatriz). Em 2026 mede 1,2 cm.','Nada foi feito.','Ela pode travar os últimos graus de extensão. Por isso a extensão completa (0°) é tarefa diária.'],
+lcm:['Ligamento colateral medial','Estabiliza o lado de dentro do joelho contra empurrões para o lado.','Leve estiramento em 2023, sem rotura. Hoje saudável, com um espessamento cicatricial discreto.','Nada foi feito.','Evite empurrões e giros do joelho.'],
+lcl:['Ligamento colateral lateral','Estabiliza o lado de fora do joelho.','Leve estiramento em 2023, sem rotura. Hoje saudável, com um espessamento cicatricial discreto.','Nada foi feito.','Evite empurrões e giros do joelho.'],
+lal:['LAL (ligamento anterolateral)','Fita pequena do lado de fora. Ajuda a controlar o giro.','Teve ruptura parcial em 2023 e depois ficou com espessamento cicatricial.','O Lemaire de 2026 reforça o controle do giro por fora.','Evite giros.'],
+tendaoPat:['Tendão patelar','Liga a patela à tíbia e passa a força do quadríceps para a perna.','Saudável. Perto dele está a sequela de Osgood-Schlatter.','Nada foi feito.','Evite pancadas e ajoelhar.'],
+quad:['Quadríceps (frente da coxa)','Músculo forte que estica o joelho e segura a patela.','Perde força rápido depois de cirurgia, o "apagamento".','Nada cirúrgico.','Faça a contração do quadríceps todos os dias, sem mexer o joelho.'],
+isquio:['Isquiotibiais (parte de trás da coxa)','Músculos que dobram o joelho.','De lá saíram os tendões usados para reconstruir o LCA em 2023 (semitendíneo e grácil).','Tendões retirados em 2023.','Não faça força com eles antes da liberação do médico: eles puxam a parte de trás do menisco costurado.'],
+pataGanso:['Pata de ganso','Ponto, por dentro da tíbia, onde se prendem tendões da coxa.','Parte desses tendões foi usada no enxerto de 2023.','Nada novo em 2026.','Pode ficar sensível por dentro do joelho. Avise o fisioterapeuta se doer.'],
+itb:['Trato iliotibial','Faixa forte do lado de fora da coxa até a tíbia. Ajuda a estabilizar o joelho.','Foi usado na cirurgia de Lemaire.','Em 09/10/2026, uma tira dele foi presa ao fêmur com uma âncora metálica de 5 mm.','Pergunte ao médico se há alguma restrição por causa do Lemaire.'],
+lemaire:['Cirurgia de Lemaire e âncora','Reforço por fora do joelho para controlar o giro.','Em 09/10/2026 uma tira do trato iliotibial foi presa ao fêmur com âncora metálica de 5 mm.','Âncora de 5 mm no fêmur e tira do trato.','Evite giros. Pergunte ao médico sobre restrições.'],
+incisao:['Incisão lateral (10 cm)','Corte feito do lado de fora do joelho para a cirurgia de Lemaire.','Está em cicatrização desde 09/10/2026.','Curativo conforme a orientação do hospital.','Mantenha limpa e seca. Pus, cheiro forte ou febre acima de 39° exigem pronto-socorro.'],
+baker:['Cisto de Baker','Bolsa de líquido atrás do joelho.','Rompeu em 2023, estava menor em 2025 e ausente em 09/2026.','Nada foi feito.','Dor, inchaço ou calor na panturrilha é sinal de alerta.']};
+const STN={healthy:'Saudável',rebuilt:'Reconstruída',repaired:'Reparada (costurada), em cicatrização',partial:'Lesão parcial',removed:'Parcialmente removida',scar:'Tecido de cicatriz',implant:'Reforço cirúrgico / implante',torn:'Rompida (lesão importante, só no Histórico)'};
+const LEG=[['healthy','verde, liso'],['rebuilt','azul, contorno grosso'],['repaired','laranja, pontilhado + pontos'],['partial','amarelo, tracejado curto'],['removed','cinza, listras'],['scar','roxo, bolinhas'],['implant','azul-escuro + âncora/parafuso'],['torn','rosa, xadrez']];
+/* ===== modelo do joelho ===== */
+const E=(k,c,l,t,d,o)=>Object.assign({k,c,l,t,d},o||{});
+const LAT=[
+E('quad','quad','musc','f','M 104 10 L 204 10 L 198 110 C 192 135 176 148 160 152 L 128 152 C 112 110 102 60 104 10 Z',{lab:[108,70,'Quadríceps']}),
+E('isquio','isquio','musc','f','M 212 10 L 300 10 C 306 90 300 180 284 232 L 258 236 C 246 190 226 130 212 10 Z',{lab:[256,90,'Isquiotibiais','middle']}),
+E('baker','baker','ext','f','M 300 372 C 300 342 334 340 334 368 C 334 398 300 402 300 372 Z',{lab:[318,418,'Cisto de Baker (ausente)','middle']}),
+E('fibula','fibula','osso','f','M 244 332 Q 258 320 276 332 Q 280 350 268 358 L 264 592 L 250 592 L 250 360 Q 240 348 244 332 Z',{lab:[272,470,'Fíbula']}),
+E('femur','femur','osso','f','M 160 10 L 158 150 C 156 200 150 240 158 268 C 165 294 190 304 215 302 C 255 307 290 295 288 262 C 286 235 262 215 250 190 C 242 165 242 120 244 10 Z',{lab:[200,200,'Fêmur','middle']}),
+E('tibia','tibia','osso','f','M 154 328 C 190 324 240 324 274 330 L 268 348 C 258 358 250 376 247 404 L 242 592 L 178 592 L 174 432 C 172 408 168 396 152 388 C 140 378 140 358 152 344 Z',{lab:[208,470,'Tíbia','middle']}),
+E('osgood','osgood','osso','l','M 150 346 C 138 358 140 378 152 388',{w:5}),
+E('patela','patela','patela','f','M 146 238 C 168 240 168 296 146 298 C 124 296 124 240 146 238 Z',{lab:[118,270,'Patela','end']}),
+E('cart','cartilagem','cart','l','M 158 266 C 164 294 190 305 215 303 C 255 308 290 296 288 262 M 154 328 C 190 324 240 324 274 330 M 160 246 Q 168 268 160 292',{w:5,lab:[296,250,'Cartilagem']}),
+E('menMed','menMed','men','f','M 156 304 L 206 310 L 156 330 Z M 226 312 L 290 298 L 290 330 Z',{ex:'M 250 308 l 0 14 M 260 306 l 0 14 M 270 304 l 0 14',lab:[296,312,'Menisco medial']}),
+E('menLat','menLat','men','f','M 166 308 L 196 311 L 166 324 Z M 240 313 L 280 304 L 280 326 Z',{lab:[296,334,'Menisco lateral']}),
+E('lcp','lcp','lig','l','M 204 268 L 250 326',{w:7,lab:[262,300,'LCP']}),
+E('lca','lca','lig','l','M 252 262 L 192 322',{w:9,lab:[120,318,'LCA (enxerto)','end']}),
+E('lcaBanda','lca','lig','l','M 259 268 L 200 326',{w:3}),
+E('fibrose','fibrose','lig','f','M 180 288 C 193 288 193 314 180 314 C 167 314 167 288 180 288 Z',{lab:[118,296,'Cicatriz 1,2 cm','end']}),
+E('fixacao','fixacao','lig','f','M 252 252 L 268 252 L 268 264 L 252 264 Z M 184 332 L 198 332 L 194 348 L 188 348 Z'),
+E('lcl','lcl','lig','l','M 234 258 L 254 334',{w:5,lab:[270,290,'LCL']}),
+E('lal','lal','lig','l','M 238 264 Q 208 300 188 332',{w:5,lab:[150,350,'LAL','end']}),
+E('quadTend','quad','tend','f','M 124 150 L 160 150 L 160 242 L 134 242 Z'),
+E('patTend','tendaoPat','tend','f','M 132 296 L 162 296 L 160 354 L 142 354 Z',{lab:[120,330,'Tendão patelar','end']}),
+E('itb','itb','trato','f','M 196 14 L 224 14 L 222 236 L 210 296 L 192 340 L 180 340 L 198 290 L 197 236 Z',{lab:[204,40,'Trato iliotibial','middle']}),
+E('lemaire','lemaire','trato','l','M 192 336 L 236 254',{w:5}),
+E('lemaire','lemaire','trato','f','M 229 254 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0 Z',{ic:['⚓',236,258],lab:[248,244,'Âncora']}),
+E('incisao','incisao','trato','l','M 214 236 Q 224 290 208 338',{w:4,lab:[240,230,'Incisão 10 cm']})];
+const FRO=[
+E('isquio','isquio','musc','f','M 112 10 L 140 10 C 148 90 150 160 144 220 C 136 280 128 320 124 352 L 112 352 C 110 290 112 240 112 180 Z M 262 10 L 292 10 C 296 100 292 200 282 260 C 280 300 278 330 272 346 L 262 346 C 268 300 266 240 264 180 Z',{lab:[30,120,'Isquiotibiais']}),
+E('quad','quad','musc','f','M 138 10 L 262 10 C 262 80 246 140 226 192 L 174 192 C 154 140 138 80 138 10 Z',{lab:[200,90,'Quadríceps','middle']}),
+E('fibula','fibula','osso','f','M 258 346 Q 276 334 296 346 Q 300 364 288 372 L 282 592 L 266 592 L 262 376 Q 252 364 258 346 Z',{lab:[300,450,'Fíbula']}),
+E('femur','femur','osso','f','M 166 10 L 234 10 L 238 140 C 242 180 276 200 286 236 C 294 268 282 298 258 302 C 238 304 224 290 218 268 Q 200 250 182 268 C 176 290 162 304 142 302 C 118 298 108 266 114 236 C 124 200 158 180 162 140 Z',{lab:[200,150,'Fêmur','middle']}),
+E('tibia','tibia','osso','f','M 112 330 C 150 325 250 325 288 330 L 282 346 C 268 352 256 366 252 396 L 246 592 L 154 592 L 148 396 C 144 366 132 352 118 346 Z M 184 328 L 194 314 L 206 314 L 216 328 Z',{lab:[200,470,'Tíbia','middle']}),
+E('osgood','osgood','osso','l','M 188 360 C 188 374 212 374 212 360',{w:5}),
+E('patela','patela','patela','f','M 200 224 C 232 224 234 272 200 274 C 166 272 168 224 200 224 Z',{lab:[200,214,'Patela','middle']}),
+E('cart','cartilagem','cart','l','M 114 262 C 114 296 140 306 160 300 M 286 262 C 286 296 260 306 240 300 M 112 330 C 150 325 250 325 288 330 M 172 252 C 176 276 224 276 228 252',{w:5,lab:[20,290,'Cartilagem']}),
+E('menMed','menMed','men','f','M 114 330 Q 116 308 152 306 Q 182 306 194 320 Q 170 334 114 330 Z',{ex:'M 134 312 l 0 14 M 146 310 l 0 14 M 158 310 l 0 14',lab:[12,318,'Menisco medial']}),
+E('menLat','menLat','men','f','M 286 330 Q 284 308 248 306 Q 218 306 206 320 Q 230 334 286 330 Z',{lab:[300,330,'Menisco lateral']}),
+E('lcp','lcp','lig','l','M 184 266 L 210 322',{w:7,lab:[150,288,'LCP','end']}),
+E('lca','lca','lig','l','M 216 264 L 192 322',{w:8,lab:[236,290,'LCA']}),
+E('lcaBanda','lca','lig','l','M 223 268 L 199 324',{w:3}),
+E('fibrose','fibrose','lig','f','M 200 292 C 214 292 214 314 200 314 C 186 314 186 292 200 292 Z'),
+E('fixacao','fixacao','lig','f','M 212 250 L 226 250 L 226 260 L 212 260 Z M 184 336 L 196 336 L 194 352 L 186 352 Z'),
+E('lcm','lcm','lig','l','M 120 258 L 128 372',{w:7,lab:[100,380,'LCM','end']}),
+E('lcl','lcl','lig','l','M 284 262 L 274 352',{w:5,lab:[300,300,'LCL']}),
+E('lal','lal','lig','l','M 286 272 Q 264 312 248 338',{w:5,lab:[300,356,'LAL']}),
+E('patTend','tendaoPat','tend','f','M 186 272 L 214 272 L 210 356 L 190 356 Z',{lab:[200,390,'Tendão patelar','middle']}),
+E('quadTend','quad','tend','f','M 176 190 L 224 190 L 214 226 L 186 226 Z'),
+E('pataGanso','pataGanso','tend','f','M 114 346 L 152 340 L 156 352 L 120 372 Z',{lab:[100,410,'Pata de ganso','end']}),
+E('itb','itb','trato','f','M 252 10 L 292 10 L 288 250 Q 280 296 262 336 L 244 336 Q 262 292 262 250 Z',{lab:[310,60,'Trato iliotibial']}),
+E('lemaire','lemaire','trato','l','M 252 336 L 282 268',{w:5}),
+E('lemaire','lemaire','trato','f','M 277 266 a 7 7 0 1 0 14 0 a 7 7 0 1 0 -14 0 Z',{ic:['⚓',284,270],lab:[300,262,'Âncora']}),
+E('incisao','incisao','trato','l','M 300 236 Q 304 290 292 346',{w:4,lab:[312,240,'Incisão']})];
+const LAYERS=[['osso','Ossos'],['patela','Patela'],['cart','Cartilagem'],['men','Meniscos'],['lig','Ligamentos'],['tend','Tendões'],['trato','Trato iliotibial'],['musc','Músculos'],['ext','Extras']];
+function shape(e,st,o){const s=st[e.k];if(!s||s==='hidden'||!o.layers[e.l])return'';
+let cls=(e.t==='l'?'ln':'sh')+' st-'+s;if(e.k==='baker'&&s==='healthy')cls+=' ghost';
+const nm=C[e.c][0]+' — '+STN[s],hl=o.hl&&o.hl.has(e.k)?' hl':'',w=e.w?` style="stroke-width:${e.w}"`:'';
+const a=o.stat?`aria-hidden="true"`:`tabindex="0" role="button" aria-label="${esc(nm)}" data-card="${e.c}"`;
+let m=`<g class="el${hl}" ${a}><title>${esc(nm)}</title>`;
+if(e.t==='l'){m+=`<path class="hit" d="${e.d}"/><path class="${cls}" d="${e.d}"${w}/>`;if(s==='rebuilt')m+=`<path class="ln center" d="${e.d}"/>`}
+else m+=`<path class="${cls}" d="${e.d}"/>`;
+if(e.ex&&s==='repaired')m+=`<path class="stitch" d="${e.ex}"/>`;
+if(e.ic)m+=`<text class="ic w" x="${e.ic[1]-5}" y="${e.ic[2]}">${e.ic[0]}</text>`;
+return m+'</g>'}
+function lab(e,st,o){const s=st[e.k];if(!e.lab||!s||s==='hidden'||!o.layers[e.l])return'';return`<text class="lab" x="${e.lab[0]}" y="${e.lab[1]}" text-anchor="${e.lab[3]||'start'}">${esc(e.lab[2])}</text>`}
+function inset(st,o){const a=(k,c,d,pos)=>{const s=st[k];if(!s||s==='hidden')return'';const nm=C[c][0]+' — '+STN[s];return`<g class="el${o.hl&&o.hl.has(k)?' hl':''}" ${o.stat?'aria-hidden="true"':`tabindex="0" role="button" aria-label="${esc(nm)}" data-card="${c}"`}><title>${esc(nm)}</title><path class="hit" d="${d}"/><path class="ln st-${s}" d="${d}" style="stroke-width:9"/>${s==='repaired'?`<path class="stitch" d="${pos}"/>`:''}</g>`};
+return`<g transform="translate(298,12)"><rect class="insetbg" width="94" height="104" rx="8"/><text class="lab" x="47" y="13" text-anchor="middle" style="stroke-width:0;font-size:9px">Vista de cima</text><ellipse class="plateau" cx="47" cy="58" rx="38" ry="34"/>${a('menLat','menLat','M 36 36 C 14 42 14 76 36 82','')}${a('menMed','menMed','M 58 36 C 82 42 82 76 58 82','M 66 42 l 0 34 M 72 44 l 0 30')}<text class="lab" x="8" y="100" style="stroke-width:0;font-size:8.5px">fora</text><text class="lab" x="62" y="100" style="stroke-width:0;font-size:8.5px">dentro</text></g>`}
+function kneeSVG(view,st,o){const arr=view==='lat'?LAT:FRO;let g='',l='';arr.forEach(e=>g+=shape(e,st,o));if(o.labels)arr.forEach(e=>l+=lab(e,st,o));
+const cap=view==='lat'?'Vista lateral (lado de fora) · frente ← → trás':'Vista frontal · dentro (medial) ← → fora (lateral)';
+return`<svg class="knee" viewBox="0 0 400 600" role="group" aria-label="Modelo do joelho esquerdo, ${view==='lat'?'vista lateral':'vista frontal'}">${g}${view==='lat'&&o.layers.men?inset(st,o):''}${l}<text class="lab" x="8" y="594" style="font-size:10px;font-weight:400">${cap}</text></svg>`}
+/* ===== histórico ===== */
+const PRE={femur:'healthy',tibia:'healthy',fibula:'healthy',patela:'healthy',osgood:'scar',cart:'healthy',menMed:'healthy',menLat:'healthy',lca:'healthy',lcaBanda:'hidden',lcp:'healthy',fibrose:'hidden',fixacao:'hidden',lcm:'healthy',lcl:'healthy',lal:'healthy',patTend:'healthy',quadTend:'healthy',quad:'healthy',isquio:'healthy',pataGanso:'healthy',itb:'healthy',lemaire:'hidden',incisao:'hidden',baker:'hidden'};
+const mk=(...o)=>Object.assign({},PRE,...o);
+const s1=mk({lca:'torn',menMed:'partial',lal:'partial',lcm:'partial',lcl:'partial'});
+const s2=mk(s1,{femur:'partial',tibia:'partial',baker:'partial'});
+const s3=mk({lca:'rebuilt',fixacao:'implant',menMed:'removed',patela:'partial',cart:'partial',isquio:'removed',pataGanso:'removed',lal:'scar',baker:'partial'});
+const s4=mk(s3,{menMed:'partial',cart:'healthy'});
+const s5=mk(s4,{fibrose:'scar'});
+const s6=mk(s5,{menMed:'torn'});
+const s7=mk(s6,{menMed:'partial',femur:'partial',baker:'healthy'});
+const s8=mk(s7,{menMed:'repaired',femur:'healthy',lcaBanda:'partial',lemaire:'implant',incisao:'repaired'});
+const NOWST=s8;
+const MS=[
+{d:'2023-04-15',dl:'15/04/2023 (aprox.)',t:'Lesão no futebol',s:s1,hl:['lca','menMed','lal'],mech:1,txt:'Você girou o corpo com o pé esquerdo preso no chão, jogando futebol. O pé ficou parado e o joelho girou. Esse giro forçado é a forma clássica de romper o LCA e machucar o menisco.',me:'Foi o começo da história do seu joelho. O giro com o pé preso é o movimento mais perigoso para ele. Por isso você deve evitar girar o corpo com o pé no chão.'},
+{d:'2023-05-08',dl:'08/05/2023',t:'Ressonância',s:s2,hl:['lca','menMed','lal','lcm','lcl','femur','tibia','baker'],txt:'A ressonância mostrou: LCA rompido por completo; lesão em rampa no menisco medial (parte de trás); ruptura parcial do LAL; colaterais estiradas; contusão óssea no côndilo femoral lateral e no planalto tibial lateral; derrame; cisto de Baker rompido; e Osgood-Schlatter.',me:'Esse exame mostrou tudo o que estava machucado de uma vez. A lesão no menisco já existia nessa época e voltou a dar problema depois.'},
+{d:'2023-08-03',dl:'03/08/2023',t:'1ª cirurgia',s:s3,hl:['lca','fixacao','menMed','isquio','patela','cart'],txt:'Cirurgia: reconstrução do LCA com tendões isquiotibiais (botão no fêmur e parafuso na tíbia); meniscectomia parcial; condroplastia da patela e sinovectomia. A lesão em rampa foi deixada sem sutura.',me:'Seu LCA foi refeito com tendões da sua própria coxa. O menisco machucado foi aparado em parte, mas a lesão em rampa não foi costurada na época.'},
+{d:'2024-11-01',dl:'11/2024 a 03/2025',t:'Estalos e falseio',s:s4,hl:['menMed'],txt:'Começaram os episódios de estalo, travamento e falseio (o joelho "falha"). Em 03/2025 surgiu dor ao jogar bola. A fisioterapia anterior foi irregular.',me:'Estalo, travamento e falseio eram avisos de que o menisco estava machucado. Como a fisioterapia foi irregular, o joelho ficou com menos proteção dos músculos. Agora a constância faz toda a diferença.'},
+{d:'2025-04-05',dl:'05/04/2025',t:'Ressonância',s:s5,hl:['fibrose','menMed'],txt:'Enxerto do LCA íntegro. Nódulo de 0,8 cm junto ao enxerto (provável cicatriz/fibrose). Menisco medial com degeneração progressiva. Cartilagem preservada. Cisto de Baker menor.',me:'O enxerto do LCA estava bom. O menisco medial já mostrava desgaste, e o nódulo ao lado do enxerto era provavelmente cicatriz.'},
+{d:'2026-04-02',dl:'02/04/2026',t:'Ressonância',s:s6,hl:['menMed','patela'],txt:'Ruptura da porção posterior e externa do corno posterior e do corpo do menisco medial. Sulco troclear plano, patela alta e condromalácia grau I.',me:'Esse exame viu a ruptura da parte de trás do menisco medial. Também mostrou que o sulco da patela é raso e que a patela é alta, o que deixa a frente do joelho mais sensível.'},
+{d:'2026-09-03',dl:'03/09/2026',t:'Ressonância',s:s7,hl:['fibrose','menMed','femur'],txt:'Enxerto íntegro. Fibrose de 1,2 cm. Menisco medial reduzido, com fissura oblíqua. Edema ósseo leve junto ao túnel femoral. Sem cisto. Observação: a alça de balde só foi vista na cirurgia, e esse exame era de um aparelho de baixa resolução.',me:'O enxerto seguia íntegro e a cicatriz na frente dele cresceu para 1,2 cm. Esse exame não viu a alça de balde. Ela só apareceu na cirurgia, e o aparelho era de baixa resolução.'},
+{d:'2026-10-09',dl:'09/10/2026',t:'2ª cirurgia',s:s8,hl:['menMed','lcaBanda','lemaire','incisao'],txt:'Sutura do menisco medial em alça de balde com pontos internos. Descrita lesão parcial do LCA (uma banda rompida), sem procedimento nele. Cirurgia de Lemaire com âncora de 5 mm no fêmur. Incisão de 10 cm no lado de fora.',me:'O menisco foi costurado de volta no lugar. Ele está frágil agora, por isso existem limites de dobra e regras de apoio. O Lemaire ajuda a controlar o giro do joelho.'},
+{d:null,dl:'Hoje',t:'Estado atual',s:NOWST,hl:['menMed','incisao'],txt:'Hoje o menisco medial costurado e a incisão lateral estão em cicatrização. O enxerto do LCA está íntegro, com cicatriz de 1,2 cm na frente dele. Os demais ligamentos, meniscos e a cartilagem estão preservados.',me:'Hoje o foco é proteger o menisco, manter a extensão completa e não deixar a coxa "apagar", sempre dentro do que o médico liberou.'}];
+const mechSVG=()=>`<svg viewBox="0 0 230 130" role="img" aria-label="Pé preso no chão e o corpo girando" style="width:100%;max-width:300px;display:block;margin:6px auto"><line x1="10" y1="112" x2="220" y2="112" stroke="var(--muted)" stroke-width="3"/><path d="M 78 112 L 78 102 L 112 102 L 112 112 Z" fill="var(--c-implant)"/><text x="115" y="124" class="lab" style="stroke-width:0">pé preso</text><path d="M 95 102 L 95 70 L 112 38" fill="none" stroke="var(--ink)" stroke-width="7" stroke-linecap="round"/><circle cx="95" cy="70" r="6" fill="var(--c-torn)"/><circle cx="116" cy="26" r="11" fill="var(--ink)"/><path d="M 150 30 C 180 12 196 42 168 58" fill="none" stroke="var(--c-repaired)" stroke-width="3" stroke-dasharray="6 3"/><path d="M 166 48 l 4 12 l 11 -6 Z" fill="var(--c-repaired)"/><text x="130" y="86" class="lab" style="stroke-width:0">corpo gira</text></svg>`;
+/* ===== estado de interface ===== */
+let ui={screen:'home',sub:'hoje',view:'lat',layers:{osso:1,patela:1,cart:1,men:1,lig:1,tend:1,trato:1,musc:1,ext:1},labels:false,date:today()<START?START:today(),week:0,hi:MS.length-1,me:false,cmpA:6,cmpB:MS.length-1,lastFk:null,flash:null};
+if(S.theme)document.documentElement.dataset.theme=S.theme;else if(matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.dataset.theme='dark';
+const view=$('#view'),dlg=$('#dlg');
+let curStates=NOWST,anim=null;
+const legend=()=>`<div class="legend" role="list" aria-label="Legenda de cores e padrões">${LEG.map(l=>`<div role="listitem"><svg width="34" height="20" viewBox="0 0 34 20" aria-hidden="true"><rect x="2" y="2" width="30" height="16" rx="4" class="sh st-${l[0]}"/>${l[0]==='implant'?'<text x="11" y="15" class="ic w">⚓</text>':''}${l[0]==='repaired'?'<path class="stitch" d="M 12 5 v 10 M 17 5 v 10 M 22 5 v 10"/>':''}</svg><span><b>${esc(STN[l[0]].split(' (')[0])}</b><small>${l[1]}</small></span></div>`).join('')}</div>`;
+const controls=()=>`<div class="row" style="margin:8px 0"><div class="chips" role="group" aria-label="Vista"><button class="chip" data-act="view" data-v="lat" aria-pressed="${ui.view==='lat'}">Vista lateral</button><button class="chip" data-act="view" data-v="fro" aria-pressed="${ui.view==='fro'}">Vista frontal</button></div></div>
+<details ${ui.ctrl?'open':''}><summary>Camadas e rótulos</summary><div class="chips" role="group" aria-label="Camadas">${LAYERS.map(l=>`<button class="chip" data-act="layer" data-l="${l[0]}" aria-pressed="${!!ui.layers[l[0]]}" data-fk="L${l[0]}">${l[1]}</button>`).join('')}<button class="chip" data-act="labels" aria-pressed="${ui.labels}" data-fk="lbl">Mostrar nomes</button></div><p class="muted sm">Desligue camadas para ver as que estão por baixo.</p></details>`;
+const knee=(st,hl)=>`<div class="kneewrap" id="knee">${kneeSVG(ui.view,st,{layers:ui.layers,labels:ui.labels,hl:new Set(hl)})}</div>`;
+/* ===== telas ===== */
+function renderHome(){const t=today(),lim=limitFor(t),n=diff(S.plan.surgery,t),left=T.filter(x=>!tDone(x,t)).length;curStates=NOWST;
+return`${aviso()}<section class="card resumo" aria-label="Resumo de hoje"><div><b>${n}</b><span>dias desde a cirurgia (${br(S.plan.surgery)})</span></div><div><b>${lim.max}°</b><span>limite de flexão hoje ${lim.ok?'':'(confirmar)'}</span></div><div><b>${left}</b><span>tarefas faltam hoje</span></div></section>
+<div class="two"><button class="btn big pri" data-nav="hist">🕰️ Histórico</button><button class="btn big pri" data-nav="acomp">✅ Acompanhamento</button></div>
+<h2 style="margin-top:16px">Seu joelho esquerdo</h2><p class="muted sm">Toque (ou use Tab e Enter) em uma estrutura para ver o que ela faz e o que foi feito.</p>
+${controls()}${knee(NOWST,['menMed','incisao'])}
+<p class="note"><span class="pulsedot" aria-hidden="true"></span><b>Estas são as áreas em cicatrização:</b> o menisco medial (costurado) e a incisão do lado de fora do joelho.</p>
+<section class="card"><h3>Legenda</h3>${legend()}</section>${foot()}`}
+function renderHist(){const m=MS[ui.hi],d=m.d||today();curStates=m.s;
+const tl=MS.map((x,i)=>`<button class="mk" role="tab" aria-selected="${i===ui.hi}" data-act="ms" data-i="${i}" data-fk="ms${i}"><b>${esc(x.dl)}</b><span>${esc(x.t)}</span></button>`).join('');
+const opts=sel=>MS.map((x,i)=>`<option value="${i}" ${i===sel?'selected':''}>${esc(x.dl+' · '+x.t)}</option>`).join('');
+return`${aviso()}<h2>Histórico do joelho</h2><div class="tl" role="tablist" aria-label="Linha do tempo (role para o lado)">${tl}</div>
+${controls()}${knee(m.s,m.hl)}
+<section class="card"><h3>${esc(m.dl)} — ${esc(m.t)}</h3>${m.mech?mechSVG():''}<p>${esc(m.txt)}</p>
+<button class="btn" data-act="me" aria-expanded="${ui.me}">O que isso significou para mim</button>${ui.me?`<p class="note" role="status">${esc(m.me)}</p>`:''}</section>
+<section class="card"><h3>Comparar antes e depois</h3><div class="two"><label class="f"><span>Antes</span><select data-ui="cmpA">${opts(ui.cmpA)}</select></label><label class="f"><span>Depois</span><select data-ui="cmpB">${opts(ui.cmpB)}</select></label></div>
+<div class="cmp" id="cmp" style="--x:50%"><span class="tagl">Antes: ${esc(MS[ui.cmpA].dl)}</span><span class="tagr">Depois: ${esc(MS[ui.cmpB].dl)}</span><div class="a">${kneeSVG(ui.view,MS[ui.cmpA].s,{layers:ui.layers,labels:false,stat:1,hl:new Set(MS[ui.cmpA].hl)})}</div><div class="b">${kneeSVG(ui.view,MS[ui.cmpB].s,{layers:ui.layers,labels:false,stat:1,hl:new Set(MS[ui.cmpB].hl)})}</div></div>
+<label class="f"><span>Arraste para comparar</span><input type="range" min="0" max="100" value="50" id="cmpr" aria-label="Deslizar entre os dois marcos"></label></section>
+<section class="card"><h3>Legenda</h3>${legend()}</section>${foot()}`}
+const SUBS=[['hoje','Hoje'],['cal','Calendário'],['conq','Conquistas'],['nao','O que não fazer'],['alerta','Alertas'],['prog','Meu progresso'],['aj','Ajustes do plano']];
+function renderAcomp(){const tabs=`<div class="chips" role="tablist" aria-label="Seções do acompanhamento">${SUBS.map(s=>`<button class="chip" role="tab" aria-selected="${ui.sub===s[0]}" data-act="sub" data-s="${s[0]}">${s[1]}</button>`).join('')}</div>`;
+const f={hoje:subHoje,cal:subCal,conq:subConq,nao:subNao,alerta:subAlerta,prog:subProg,aj:subAj}[ui.sub];
+return`${aviso()}<h2>Acompanhamento</h2>${tabs}${f()}${foot()}`}
+function taskRow(t,d,ro){const n=S.times[t.id]||1,c=cnt(t.id,d),done=tDone(t,d),l=S.logs[d]||{};
+let chips='';if(t.id!=='reg'){for(let i=1;i<=n;i++)chips+=`<button class="chk" aria-pressed="${c>=i}" ${ro?'disabled':''} data-act="chip" data-t="${t.id}" data-i="${i}" data-fk="c${t.id}${i}" aria-label="${esc(t.n)}: ${esc((t.cl&&t.cl[i-1])||('vez '+i))}">${esc((t.cl&&t.cl[i-1])||i)}</button> `}
+const ex=t.id==='ice'?` · ${S.iceMin} min por vez`:'';
+return`<article class="task ${done?'done':''}"><div class="th"><span class="ico" aria-hidden="true">${t.ic}</span><h3>${esc(t.n)}</h3><span class="cnt">${t.id==='reg'?(done?'✔ feito':'falta'):c+'/'+n}${done&&t.id!=='reg'?' ✔':''}</span></div>
+${t.id==='reg'?'':`<p class="sm muted">${n}x por dia${ex}</p><div class="chips">${chips}</div>`}
+${t.id==='flex'&&overDay(d)?`<p class="alert warn" role="alert">Ângulo registrado acima do limite (${l.angle}° &gt; ${limitFor(d).max}°). Esta tarefa não conta pontos neste dia.</p>`:''}
+<div class="row" style="margin-top:8px"><button class="btn" data-act="how" data-t="${t.id}">Como fazer</button></div>
+<details><summary>Por quê e cuidado</summary><p><b>Por quê:</b> ${esc(t.why)}</p><p><b>Cuidado:</b> ${esc(t.care)}</p></details></article>`}
+function subHoje(){const d=ui.date,t=today(),lim=limitFor(d),l=S.logs[d]||{},fut=d>t,info=dayInfo(d),idx=Math.abs(diff(START,d))%NO.length;
+const nav=`<div class="row"><button class="btn" data-act="day" data-n="-1" ${d<=START?'disabled':''}>◀ Dia anterior</button><button class="btn" data-act="day" data-n="1" ${d>=t?'disabled':''}>Dia seguinte ▶</button></div>`;
+const over=info.over?`<div class="alert warn" role="alert">⚠️ Você registrou ${l.angle}°, acima do limite deste dia (${lim.max}°). Dobrar além do limite pode machucar o menisco costurado. Por isso <b>não contamos pontos</b> de dobrar nesse dia. Avise seu médico ou fisioterapeuta.</div>`:'';
+const w=lim.waiting?`<p class="alert warn">${esc(S.plan.afterText)}. Até lá, <b>não passe de ${lim.max}°</b>.</p>`:'';
+const pend=S.plan.pending.filter(p=>!p.ok);
+return`${nav}<h3 style="margin-top:12px">${wd(d)}, ${br(d)}${d===t?' · <span class="badge ok">HOJE</span>':''}</h3>
+<section class="card"><p><b>Limite de flexão do dia: ${lim.max}°</b> ${badge(lim.ok)}</p><p>${esc(S.plan.weight)} ${badge(S.plan.weightOk)}</p>${w}
+<details><summary>A confirmar na consulta (${pend.length})</summary><ul>${pend.map(p=>`<li>${esc(p.t)} ${badge(false)}</li>`).join('')||'<li>Tudo confirmado.</li>'}</ul><p class="sm muted">Consulta de retorno: ${br(S.plan.returnVisit)} ${badge(S.plan.returnOk)}</p></details></section>
+${fut?'<p class="alert warn">Este dia ainda não chegou. Você só pode marcar de hoje para trás.</p>':''}
+<section class="card"><p class="sm">${NO[idx][0]} <b>Lembrete do dia — não:</b> ${esc(NO[idx][1])}. <span class="muted">${esc(NO[idx][2])}</span></p></section>
+<div class="card" style="background:var(--soft)"><p><b>${info.done}/${info.total}</b> tarefas feitas · ${info.pts} pontos neste dia</p><div class="bar" role="progressbar" aria-valuenow="${info.done}" aria-valuemin="0" aria-valuemax="${info.total}"><i style="width:${100*info.done/info.total}%"></i></div></div>
+${over}${T.filter(x=>x.id!=='reg').map(x=>taskRow(x,d,fut)).join('')}${regForm(d,fut)}`}
+function regForm(d,fut){const l=S.logs[d]||{},t=TM.reg,sw=['nenhum','leve','moderado','muito'];
+return`<article class="task ${tDone(t,d)?'done':''}"><div class="th"><span class="ico" aria-hidden="true">📝</span><h3>${t.n}</h3><span class="cnt">${tDone(t,d)?'✔ feito':'falta'}</span></div>
+<label class="f"><span>Dor agora: <output id="painv">${l.pain!=null?l.pain:'mova a barra'}</output> de 10</span><input type="range" id="pain" min="0" max="10" value="${l.pain!=null?l.pain:0}" data-t="${l.pain!=null?1:0}" ${fut?'disabled':''} aria-describedby="painv"></label>
+<div role="radiogroup" aria-label="Inchaço" class="chips">${sw.map((s,i)=>`<button class="chip" role="radio" aria-checked="${l.swell===i}" data-act="swell" data-i="${i}" ${fut?'disabled':''}>${l.swell===i?'✔ ':''}Inchaço: ${s}</button>`).join('')}</div>
+<label class="f"><span>Maior ângulo atingido hoje (graus, se medir)</span><input type="number" id="angle" min="0" max="160" inputmode="numeric" value="${l.angle!=null?l.angle:''}" ${fut?'disabled':''}></label>
+<label class="f"><span>Anotação livre</span><textarea id="note" ${fut?'disabled':''}>${esc(l.note||'')}</textarea></label>
+<button class="btn pri big" data-act="savereg" ${fut?'disabled':''}>Salvar registro do dia</button><div id="regmsg" role="alert"></div>
+<details><summary>Por quê e cuidado</summary><p><b>Por quê:</b> ${esc(t.why)}</p><p><b>Cuidado:</b> ${esc(t.care)}</p></details></article>`}
+function subCal(){const t=today(),ws=addDays(START,ui.week*7);let rows='';
+for(let i=0;i<7;i++){const d=addDays(ws,i),lim=limitFor(d),info=dayInfo(d),fut=d>t;
+let st=fut?'– previsto':d===t?`⏳ ${info.done}/${info.total}`:info.ok?'✔ feito':info.done>0?`◐ parcial ${info.done}/${info.total}`:'✖ não feito';
+const ev=[];if(d===S.plan.returnVisit)ev.push('🩺 Consulta de retorno (confirmar)');S.plan.flex.forEach(x=>{if(x.from===d)ev.push('📐 Novo limite: '+x.max+'°')});if(d===S.plan.waitFrom)ev.push('⏸ '+S.plan.afterText);
+rows+=`<button class="day ${d===t?'today':''}" data-act="goday" data-d="${d}" aria-label="${wd(d)} ${br(d)}, limite ${lim.max} graus, ${st}"><span><b>${pad(pd(d).getDate())}/${pad(pd(d).getMonth()+1)}</b><br><small>${wd(d)}${d===t?' · HOJE':''}</small></span><span>Dobrar até <b>${lim.max}°</b>${lim.ok?'':' <span class="badge">confirmar</span>'}${ev.map(e=>`<br><small>${esc(e)}</small>`).join('')}</span><span>${st}</span></button>`}
+const n=diff(S.plan.surgery,ws);
+return`<h3>Semana ${ui.week+1} (dias ${n} a ${n+6} após a cirurgia)</h3><div class="row"><button class="btn" data-act="wk" data-n="-1" ${ui.week<=0?'disabled':''}>◀ Semana anterior</button><button class="btn" data-act="wk" data-n="1" ${ui.week>=9?'disabled':''}>Próxima semana ▶</button></div>${rows}<p class="sm muted">Toque em um dia para ver as tarefas (visão por dia). Datas e limites são editáveis em "Ajustes do plano".</p>`}
+function subConq(){const tt=totals(),got=MAP.filter(m=>mapStat(m)==='got').length,pc=Math.round(100*got/MAP.length);
+const m=MSG[Math.min(MSG.length-1,tt.pts%MSG.length)];
+return`<section class="card"><div class="two"><div><h3>⭐ ${tt.pts} pontos</h3><p class="sm muted">Pontos vêm de cuidado e constância, nunca de pressa.</p></div><div><h3>🔥 ${tt.st} dia(s) seguidos</h3><p class="sm muted">Dias completos em sequência.</p></div></div><p class="note">${m}</p></section>
+<section class="card"><h3>Selos</h3>${BADGES.map(b=>{const on=b.f();return`<div class="bdg ${on?'on':''}"><span class="ico" aria-hidden="true">${b.ic}</span><div><b>${b.n}</b> ${on?'<span class="badge ok">conquistado</span>':'<span class="badge">bloqueado</span>'}<br><span class="sm">${b.d}</span></div></div>`}).join('')}</section>
+<section class="card"><h3>Mapa da recuperação</h3><p class="sm">Cada marco só abre quando o médico libera. Nunca antes.</p><div class="bar" role="progressbar" aria-valuenow="${pc}" aria-valuemin="0" aria-valuemax="100" aria-label="Progresso das etapas"><i style="width:${pc}%"></i></div><p class="sm">${got} de ${MAP.length} marcos conquistados</p>
+${MAP.map(m=>{const s=mapStat(m),ms=S.mapState[m.id]||{};return`<div class="mstone ${s}"><span aria-hidden="true">${s==='got'?'🏁':s==='rel'?'🔓':'🔒'}</span><div style="flex:1"><b>${m.t}</b><br><span class="sm">${s==='got'?'Conquistado':s==='rel'?'Liberado pelo plano/médico':'Bloqueado: aguardando liberação do médico'}</span></div>${m.deg?'':`<div>${s==='lock'?`<button class="btn" data-act="mrel" data-m="${m.id}">Médico liberou</button>`:`<button class="btn" data-act="mdone" data-m="${m.id}">${ms.done?'Desfazer':'Conquistei'}</button> <button class="btn" data-act="mrel" data-m="${m.id}" aria-label="Remover liberação">↺</button>`}</div>`}</div>`}).join('')}
+<p class="sm muted">Marcos de dobra abrem pelas datas do plano e são conquistados ao registrar o ângulo dentro do limite.</p></section>`}
+function subNao(){return`<p>Estas regras valem o tempo todo, e viram lembretes no dia.</p>${NO.map(n=>`<div class="no"><span class="ico" aria-hidden="true">${n[0]}</span><div><b>⛔ ${n[1]}</b><br><span class="sm"><b>Por quê:</b> ${n[2]}</span></div></div>`).join('')}`}
+const alertHTML=()=>`<div class="alert red"><h3>🚨 Procure o pronto-socorro</h3><ul><li>Dor, inchaço ou calor na panturrilha</li><li>Falta de ar ou dor no peito</li><li>Febre acima de 39°</li><li>Pus ou cheiro forte na ferida</li><li>Dor que não passa com a medicação</li></ul></div><div class="alert warn"><h3>📞 Fale com o ortopedista</h3><ul><li>Estalo com travamento</li><li>Falseio (o joelho "falha")</li><li>Perda da extensão (não consegue esticar)</li><li>Inchaço que piora</li></ul></div>`;
+const subAlerta=()=>alertHTML();
+function chart(title,pts,max,unit){if(!pts.length)return`<h3>${title}</h3><p class="muted sm">Sem registros ainda.</p>`;const W=320,H=120,pl=30,pb=18,n=pts.length,x=i=>pl+(n===1?(W-pl-10)/2:(W-pl-10)*i/(n-1)),y=v=>H-pb-(H-pb-10)*v/max;
+const p=pts.map((q,i)=>`${i?'L':'M'} ${x(i).toFixed(1)} ${y(q.v).toFixed(1)}`).join(' ');
+return`<h3>${title}</h3><svg viewBox="0 0 ${W} ${H}" style="width:100%;max-width:420px" role="img" aria-label="${title}: ${pts.map(q=>br(q.d)+' '+q.v+unit).join('; ')}"><line x1="${pl}" y1="${H-pb}" x2="${W-6}" y2="${H-pb}" stroke="var(--muted)"/><line x1="${pl}" y1="8" x2="${pl}" y2="${H-pb}" stroke="var(--muted)"/><text x="2" y="14" class="lab" style="stroke-width:0">${max}${unit}</text><text x="8" y="${H-pb}" class="lab" style="stroke-width:0">0</text><path d="${p}" fill="none" stroke="var(--brand)" stroke-width="2.5"/>${pts.map((q,i)=>`<circle cx="${x(i)}" cy="${y(q.v)}" r="4" fill="var(--paper)" stroke="var(--brand)" stroke-width="2"/>`).join('')}<text x="${pl}" y="${H-3}" class="lab" style="stroke-width:0">${br(pts[0].d).slice(0,5)}</text><text x="${W-6}" y="${H-3}" text-anchor="end" class="lab" style="stroke-width:0">${br(pts[n-1].d).slice(0,5)}</text></svg>`}
+function subProg(){const ds=Object.keys(S.logs).sort(),g=k=>ds.filter(d=>S.logs[d][k]!=null).map(d=>({d,v:S.logs[d][k]}));
+const sw=['nenhum','leve','moderado','muito'],notes=ds.filter(d=>S.logs[d].note);
+return`<section class="card">${chart('Dor (0 a 10)',g('pain'),10,'')}${chart('Inchaço (0 nenhum, 3 muito)',g('swell'),3,'')}${chart('Ângulo máximo (graus)',g('angle'),Math.max(120,...g('angle').map(q=>q.v)),'°')}
+<details><summary>Ver como tabela</summary><table class="t"><tr><th>Dia</th><th>Dor</th><th>Inchaço</th><th>Ângulo</th></tr>${ds.map(d=>{const l=S.logs[d];return`<tr><td>${br(d)}</td><td>${l.pain!=null?l.pain:'–'}</td><td>${l.swell!=null?sw[l.swell]:'–'}</td><td>${l.angle!=null?l.angle+'°':'–'}</td></tr>`}).join('')}</table></details></section>
+<section class="card"><h3>Anotações</h3>${notes.length?notes.map(d=>`<div class="note"><b>${br(d)}</b>: ${esc(S.logs[d].note)}</div>`).join(''):'<p class="muted">Nenhuma anotação ainda.</p>'}</section>${dataBox()}`}
+const dataBox=()=>`<section class="card"><h3>Seus dados</h3><p class="sm">Tudo fica só neste aparelho. Faça uma cópia de vez em quando.</p><div class="two"><button class="btn" data-act="export">Exportar progresso (JSON)</button><button class="btn" data-act="import">Importar</button></div><input type="file" id="file" accept="application/json,.json" style="display:none"><div id="datamsg" role="status" class="sm"></div></section>`;
+function subAj(){const p=S.plan,inp=(b,v,ty,ex)=>`<input type="${ty||'text'}" value="${esc(v)}" data-bind="${b}" ${ex||''}>`,ck=(b,v,l)=>`<label class="row" style="margin:6px 0"><input type="checkbox" data-bind="${b}" ${v?'checked':''} style="width:28px;height:28px;flex:0 0 28px"> <span style="flex:1">${l}</span></label>`;
+return`<p class="alert warn">Quando o médico mudar a orientação, atualize aqui. O calendário se recalcula. Itens com o selo ainda não foram confirmados.</p>
+<section class="card"><h3>Cirurgia e consulta</h3><label class="f"><span>Data da cirurgia</span>${inp('plan.surgery',p.surgery,'date')}</label><label class="f"><span>Consulta de retorno ${badge(p.returnOk)}</span>${inp('plan.returnVisit',p.returnVisit,'date')}</label>${ck('plan.returnOk',p.returnOk,'Data confirmada com o médico')}</section>
+<section class="card"><h3>Limites de flexão (graus)</h3>${p.flex.map((x,i)=>`<div class="card" style="margin:6px 0"><div class="two"><label class="f"><span>A partir de</span>${inp('plan.flex.'+i+'.from',x.from,'date')}</label><label class="f"><span>Até (graus)</span>${inp('plan.flex.'+i+'.max',x.max,'number','min="0" max="150"')}</label></div>${ck('plan.flex.'+i+'.ok',x.ok,'Confirmado com o médico')} ${badge(x.ok)} <button class="btn danger" data-act="delflex" data-i="${i}">Remover</button></div>`).join('')}<button class="btn" data-act="addflex">+ Adicionar limite</button>
+<label class="f"><span>Depois da última data, a partir de</span>${inp('plan.waitFrom',p.waitFrom,'date')}</label><label class="f"><span>Texto exibido</span>${inp('plan.afterText',p.afterText)}</label><p class="sm muted">Nessa fase o limite anterior continua valendo até o médico liberar mais.</p></section>
+<section class="card"><h3>Regra de apoio ${badge(p.weightOk)}</h3><textarea data-bind="plan.weight">${esc(p.weight)}</textarea>${ck('plan.weightOk',p.weightOk,'Confirmado com o médico')}</section>
+<section class="card"><h3>Itens a confirmar na consulta</h3>${p.pending.map((x,i)=>`<div>${ck('plan.pending.'+i+'.ok',x.ok,esc(x.t)+' '+badge(x.ok))}</div>`).join('')}</section>
+<section class="card"><h3>Tarefas: vezes por dia ${badge(S.timesOk)}</h3>${T.map(t=>`<label class="f"><span>${t.ic} ${esc(t.n)}</span>${inp('times.'+t.id,S.times[t.id],'number','min="1" max="12"')}</label>`).join('')}<label class="f"><span>Gelo: minutos por vez</span>${inp('iceMin',S.iceMin,'number','min="1" max="60"')}</label>${ck('timesOk',S.timesOk,'Frequências confirmadas com o médico/fisioterapeuta')}<p class="sm muted">Os valores iniciais são só um ponto de partida: use o que seu médico e seu fisioterapeuta indicarem.</p></section>${dataBox()}
+<section class="card"><button class="btn danger" data-act="reset">Apagar todos os dados deste aparelho</button></section>`}
+function renderPerg(){return`${aviso()}<h2>Perguntas para o médico</h2><p class="sm">Leve esta lista para a consulta de ${br(S.plan.returnVisit)} ${badge(S.plan.returnOk)}. Anote as respostas.</p>
+${S.questions.map((q,i)=>`<div class="card"><div class="qrow"><input type="checkbox" data-bind="questions.${i}.done" ${q.done?'checked':''} aria-label="Já perguntei"><label class="f" style="margin:0"><span class="sm muted">Pergunta ${i+1}</span><textarea data-bind="questions.${i}.t" style="min-height:64px">${esc(q.t)}</textarea></label><button class="btn danger" data-act="delq" data-i="${i}" aria-label="Remover pergunta ${i+1}">✕</button></div><label class="f"><span>Resposta do médico</span><textarea data-bind="questions.${i}.a" placeholder="Anote aqui">${esc(q.a)}</textarea></label></div>`).join('')}
+<button class="btn big" data-act="addq">+ Nova pergunta</button>${foot()}`}
+/* ===== modelo animado do movimento ===== */
+function mvLevels(mode,a){const L={};
+L.men=a<15?[0,'quase sem pressão']:a<45?[1,'levemente pressionado por trás']:a<=90?[2,'pressionado por trás']:[3,'muito pressionado (fora do permitido)'];
+L.lca=a<=10?[1,'tensionado de leve']:[0,'pouco tensionado'];
+L.lcp=a<30?[0,'relaxado']:a<60?[1,'começando a tensionar']:[2,'tensionado'];
+L.itb=a<=20?[1,'levemente tensionado']:[0,'relaxado'];
+L.pat=a<20?[0,'pouco apertada']:a<60?[1,'entrando no sulco']:[2,'pressionada no sulco'];
+L.quad=mode==='quad'?[2,'contraído, trabalhando']:a<45?[0,'relaxado']:[1,'alongado'];
+L.isq=[0,'relaxados (não force)'];return L}
+function mvHTML(mode,a,lim){const K={x:190,y:150},R=120,rad=Math.PI/180,L=mvLevels(mode,a);
+const P=th=>[K.x+R*Math.sin(th*rad),K.y+R*Math.cos(th*rad)];
+const rot=(x,y,ang)=>{const c=Math.cos(ang*rad),s=Math.sin(ang*rad);return[K.x+x*c-y*s,K.y+x*s+y*c]};
+const arc=(a0,a1,st,w)=>{const p=P(a0),q=P(a1);return`<path d="M${p[0].toFixed(1)} ${p[1].toFixed(1)} A${R} ${R} 0 0 0 ${q[0].toFixed(1)} ${q[1].toFixed(1)}" fill="none" stroke="${st}" stroke-width="${w}"/>`};
+const col=l=>['var(--c-healthy)','var(--c-partial)','var(--c-repaired)','#d0143c'][l];
+const ln=(p,q,l,w)=>`<line x1="${p[0].toFixed(1)}" y1="${p[1].toFixed(1)}" x2="${q[0].toFixed(1)}" y2="${q[1].toFixed(1)}" stroke="${col(l)}" stroke-width="${w}" stroke-linecap="round" ${l>=2?'stroke-dasharray="1 0"':''}/>`;
+const th=-a*.55*rad,pp=[K.x+(-40*Math.cos(th)+4*Math.sin(th)),K.y+(-40*Math.sin(th)-4*Math.cos(th))];
+const tub=rot(-22,46,-a),acT=rot(-6,8,-a),lcT=rot(14,10,-a),itT=rot(-14,16,-a),hamT=rot(18,16,-a);
+const mp=[K.x+10,K.y+12],mry=Math.max(4,9-a/16);
+const pl=P(lim),pe=P(Math.min(lim+14,140)),pg=P(lim/2),pr=P((lim+135)/2);
+const out=pt=>[K.x+(pt[0]-K.x)*1.2,K.y+(pt[1]-K.y)*1.2];
+const arrow=a>=15?`<path d="M ${K.x+54} ${K.y+12} L ${K.x+32} ${K.y+12}" stroke="${col(L.men[0])}" stroke-width="3" marker-end="url(#ar)"/><text class="lab" x="${K.x+56}" y="${K.y+8}">pressão</text>`:'';
+const svg=`<svg viewBox="0 0 380 400" role="img" aria-label="Joelho de lado com a perna dobrada ${a} graus" style="width:100%;max-height:60vh"><defs><marker id="ar" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto"><path d="M0 0L7 3.5L0 7Z" fill="var(--ink)"/></marker></defs>
+${mode==='flex'?arc(0,Math.max(lim,0.01),'var(--c-healthy)',12)+(lim<135?arc(lim,135,'url(#pRed)',12):'')+`<text class="lab" x="${out(pg)[0]}" y="${out(pg)[1]}" text-anchor="start">✔ PERMITIDO</text>`+(lim<120?`<text class="lab" x="${out(pr)[0]-4}" y="${out(pr)[1]}" text-anchor="start" style="fill:var(--danger)">✖ PROIBIDO</text>`:''):''}
+<rect x="${K.x-20}" y="0" width="40" height="${K.y}" rx="12" fill="var(--c-healthy-f)" stroke="var(--c-healthy)" stroke-width="2"/><circle cx="${K.x}" cy="${K.y}" r="30" fill="var(--c-healthy-f)" stroke="var(--c-healthy)" stroke-width="2"/><text class="lab" x="${K.x-60}" y="40" text-anchor="end">Fêmur</text>
+<g transform="rotate(${-a} ${K.x} ${K.y})"><rect x="${K.x-18}" y="${K.y+8}" width="36" height="215" rx="12" fill="var(--c-healthy-f)" stroke="var(--c-healthy)" stroke-width="2"/><rect x="${K.x-26}" y="${K.y+4}" width="52" height="12" rx="6" fill="var(--c-healthy-f)" stroke="var(--c-healthy)" stroke-width="2"/><circle cx="${K.x}" cy="${K.y+228}" r="9" fill="var(--c-implant)"/><text class="lab" x="${K.x+14}" y="${K.y+200}" transform="rotate(${a} ${K.x+14} ${K.y+200})">Tíbia</text></g>
+<rect x="${K.x-42}" y="40" width="26" height="${K.y-60}" rx="8" fill="${col(L.quad[0])}" opacity=".35" stroke="${col(L.quad[0])}" stroke-width="${mode==='quad'?4:2}"/><text class="lab" x="${K.x-48}" y="90" text-anchor="end">Quadríceps</text>
+${ln([K.x+6,40],itT,L.itb[0],4)}${ln([K.x+30,60],hamT,L.isq[0],4)}
+${ln([K.x+14,K.y-14],acT,L.lca[0],6)}${ln([K.x-12,K.y-12],lcT,L.lcp[0],5)}
+${ln([K.x-30,K.y-60],pp,L.quad[0],4)}${ln(pp,tub,0,4)}
+<ellipse cx="${pp[0].toFixed(1)}" cy="${pp[1].toFixed(1)}" rx="8" ry="15" transform="rotate(${(-a*.55).toFixed(1)} ${pp[0].toFixed(1)} ${pp[1].toFixed(1)})" fill="${col(L.pat[0])}" opacity=".8" stroke="var(--ink)"/><text class="lab" x="${pp[0]-14}" y="${pp[1]-18}" text-anchor="end">Patela</text>
+<ellipse cx="${mp[0]}" cy="${mp[1]}" rx="17" ry="${mry.toFixed(1)}" fill="${col(L.men[0])}" stroke="var(--ink)" stroke-width="2" stroke-dasharray="4 2"/>${arrow}<text class="lab" x="${K.x+30}" y="${K.y+34}">Menisco costurado</text>
+<text class="lab" x="${K.x+6}" y="${K.y-48}">LCA</text></svg>`;
+const names=[['men','Menisco medial (costurado)'],['lca','Enxerto do LCA'],['lcp','LCP'],['itb','Trato iliotibial'],['pat','Patela no sulco'],['quad','Quadríceps'],['isq','Isquiotibiais']];
+const rows=names.map(n=>{const q=L[n[0]];return`<li><span>${n[1]}</span><span class="lv" aria-hidden="true"><i class="${q[0]>0?'on':''}"></i><i class="${q[0]>1?'on':''}"></i><i class="${q[0]>2?'on':''}"></i></span><span>${q[1]}</span></li>`}).join('');
+let cap;if(mode==='quad')cap='Aqui o joelho fica parado e só o músculo da coxa trabalha. Assim ele não "apaga".';
+else if(a<=10)cap='No 0° o foco é esticar o joelho por completo. O enxerto do LCA fica tensionado de leve e a cicatriz na frente dele é alongada. O menisco costurado quase não é pressionado.';
+else if(a<45)cap='Aqui o menisco costurado é levemente pressionado por trás. Por isso o limite.';
+else cap='Aqui o menisco costurado é mais pressionado por trás e a patela aperta o sulco. Por isso o limite existe.';
+if(mode==='flex'&&a>=lim&&lim>0)cap+=' Você chegou ao limite de hoje. Pare aqui.';
+return{svg,rows:`<ul class="rows" aria-label="Estruturas e o que sentem neste ângulo">${rows}</ul>`,cap}}
+function paintMv(mode,a,lim){const r=mvHTML(mode,a,lim);$('#mvbox').innerHTML=r.svg+`<p class="note" role="status"><b>${a}°</b> — ${r.cap}</p>`+r.rows;$('#mvv').textContent=a+'°'}
+function stopAnim(){if(anim){cancelAnimationFrame(anim);anim=null}}
+function openHow(id){const t=TM[id],lim=limitFor(today()).max;let m='';
+if(t.mv){const mode=t.mv,max=mode==='flex'?lim:0;m=`<h3>Modelo do movimento</h3><div id="mvbox"></div><label class="f"><span>Ângulo: <output id="mvv">0°</output> ${mode==='flex'?`(limite de hoje: ${lim}°, a barra para aí)`:'(neste exercício o joelho fica reto)'}</span><input id="mvr" type="range" min="0" max="${max}" value="0" ${max===0?'disabled':''} aria-valuetext="0 graus"></label>${mode==='flex'?'<button class="btn" id="mvplay">▶ Ver o movimento</button>':''}<p class="sm muted">Desenho simplificado, só para entender. Quem define os limites é o seu médico.</p>`}
+openDlg(`<h2>${t.ic} ${esc(t.n)}</h2>${aviso()}<ol>${t.how.map(h=>`<li>${esc(h)}</li>`).join('')}</ol><p><b>Por quê:</b> ${esc(t.why)}</p><p><b>Cuidado:</b> ${esc(t.care)}</p>${id==='ice'?`<p><b>Tempo:</b> ${S.iceMin} min por vez, ${S.times.ice}x por dia ${badge(S.timesOk)}</p>`:''}${m}`);
+if(t.mv){const mode=t.mv,max=mode==='flex'?lim:0,r=$('#mvr');paintMv(mode,0,mode==='flex'?lim:0);
+r.addEventListener('input',()=>{let v=Math.min(+r.value,max);r.value=v;r.setAttribute('aria-valuetext',v+' graus');paintMv(mode,v,lim)});
+const pb=$('#mvplay');if(pb){if(matchMedia('(prefers-reduced-motion: reduce)').matches){pb.disabled=true;pb.textContent='Use a barra para mover'}else pb.addEventListener('click',()=>{stopAnim();const t0=performance.now(),D=4000;const step=n=>{const k=((n-t0)%D)/D,v=Math.round(lim*(k<.5?k*2:2-k*2));r.value=v;paintMv(mode,v,lim);if(n-t0<D)anim=requestAnimationFrame(step);else{r.value=0;paintMv(mode,0,lim);anim=null}};anim=requestAnimationFrame(step)})}}}
+function openCard(id){const c=C[id];if(!c)return;const keys=Object.keys(curStates).filter(k=>(LAT.concat(FRO).find(e=>e.k===k)||{}).c===id&&curStates[k]!=='hidden'),s=keys.length?curStates[keys[0]]:'healthy';
+openDlg(`<h2>${esc(c[0])}</h2><div class="stbox"><svg width="34" height="20" aria-hidden="true"><rect x="2" y="2" width="30" height="16" rx="4" class="sh st-${s}"/></svg><b>${STN[s]}</b></div>${aviso()}<h3>O que ela faz</h3><p>${esc(c[1])}</p><h3>O que aconteceu</h3><p>${esc(c[2])}</p><h3>O que foi feito</h3><p>${esc(c[3])}</p><h3>O que fazer ou evitar</h3><p>${esc(c[4])}</p>`)}
+function openDlg(h){stopAnim();dlg.innerHTML=h+`<form method="dialog" style="margin-top:12px"><button class="btn big pri">Fechar</button></form><p class="foot">Material educativo. Não substitui orientação médica.</p>`;try{dlg.showModal()}catch(e){dlg.setAttribute('open','')}dlg.scrollTop=0}
+dlg.addEventListener('close',stopAnim);dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+/* ===== render principal ===== */
+function render(){const y=window.scrollY;
+view.innerHTML=ui.screen==='home'?renderHome():ui.screen==='hist'?renderHist():ui.screen==='acomp'?renderAcomp():renderPerg();
+$$('nav.bot button').forEach(b=>{if(b.dataset.nav===ui.screen)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+window.scrollTo(0,y);
+if(ui.lastFk){const f=$(`[data-fk="${ui.lastFk}"]`);if(f)f.focus({preventScroll:true});ui.lastFk=null}
+if(ui.screen==='hist'){const s=$(`.mk[data-i="${ui.hi}"]`);if(s&&ui.scrollTl){s.scrollIntoView({inline:'center',block:'nearest'});ui.scrollTl=false}}
+const cr=$('#cmpr');if(cr){const c=$('#cmp');cr.addEventListener('input',()=>c.style.setProperty('--x',cr.value+'%'))}
+const pr=$('#pain');if(pr)pr.addEventListener('input',()=>{pr.dataset.t=1;$('#painv').textContent=pr.value})}
+function go(s){ui.screen=s;if(s==='acomp')ui.sub=ui.sub||'hoje';window.scrollTo(0,0);render();view.focus({preventScroll:true})}
+function setPath(path,val){const p=path.split('.');let o=S;for(let i=0;i<p.length-1;i++)o=o[p[i]];o[p[p.length-1]]=val}
+function ensureLog(d){if(!S.logs[d])S.logs[d]={};return S.logs[d]}
+function saveReg(){const d=ui.date,l=ensureLog(d),pe=$('#pain'),a=$('#angle').value,msg=$('#regmsg');
+if(pe.dataset.t==='1')l.pain=Math.max(0,Math.min(10,+pe.value));l.angle=a===''?null:Math.max(0,Math.min(160,+a));l.note=$('#note').value.trim();save();
+if(l.pain==null||l.swell==null){msg.innerHTML='<div class="alert warn" role="alert">Para concluir o registro, mova a barra da dor (mesmo se for 0) e escolha o inchaço (nenhum, leve, moderado ou muito).</div>';return}
+save();render();const lim=limitFor(d).max;
+let m='';if(l.angle!=null&&l.angle>lim)m=`<div class="alert warn" role="alert">⚠️ ${l.angle}° passou do limite do dia (${lim}°). Não conta pontos de dobrar. Evite dobrar além do limite e avise seu médico ou fisioterapeuta.</div>`;
+if(l.pain>=8)m+='<div class="alert red" role="alert">Dor forte. Se ela não passa com a medicação, veja os Sinais de alerta e procure o pronto-socorro.</div>';
+if(m){const box=$('#regmsg');if(box)box.innerHTML=m}}
+function exportData(){const j=JSON.stringify(Object.assign({app:'joelho-app',exportedAt:new Date().toISOString()},S),null,2);const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([j],{type:'application/json'}));a.download='joelho-progresso-'+today()+'.json';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},500);const m=$('#datamsg');if(m)m.textContent='Arquivo exportado.'}
+function importData(f){const r=new FileReader();r.onload=()=>{const m=$('#datamsg');try{const o=JSON.parse(r.result);if(!o||typeof o!=='object'||!o.plan||!o.logs)throw new Error('formato');S=norm(o);save();render();const mm=$('#datamsg');if(mm)mm.textContent='Progresso importado.'}catch(e){if(m)m.textContent='Não consegui ler esse arquivo. Use um JSON exportado por este app.'}};r.readAsText(f)}
+document.addEventListener('click',e=>{const el=e.target.closest('[data-act],[data-nav],[data-card],#theme,#fab');if(!el)return;
+const fk=el.closest('[data-fk]');ui.lastFk=fk?fk.dataset.fk:null;
+if(el.id==='theme'){const cur=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=cur;S.theme=cur;save();return}
+if(el.id==='fab'){openDlg(`<h2>🚨 Sinais de alerta</h2>${alertHTML()}`);return}
+if(el.dataset.nav){go(el.dataset.nav);return}
+if(el.dataset.card){openCard(el.dataset.card);return}
+const a=el.dataset.act,D=el.dataset;
+switch(a){
+case'view':ui.view=D.v;break;
+case'layer':ui.layers[D.l]=ui.layers[D.l]?0:1;ui.ctrl=true;break;
+case'labels':ui.labels=!ui.labels;ui.ctrl=true;break;
+case'ms':ui.hi=+D.i;ui.me=false;ui.scrollTl=true;break;
+case'me':ui.me=!ui.me;break;
+case'sub':ui.sub=D.s;break;
+case'day':ui.date=addDays(ui.date,+D.n);if(ui.date<START)ui.date=START;if(ui.date>today())ui.date=today();break;
+case'wk':ui.week=Math.max(0,Math.min(9,ui.week+ +D.n));break;
+case'goday':ui.date=D.d;ui.sub='hoje';window.scrollTo(0,0);break;
+case'chip':{const d=ui.date;if(d>today())return;const l=ensureLog(d);l.done=l.done||{};const c=l.done[D.t]||0,i=+D.i;l.done[D.t]=c>=i?i-1:i;save();render();const l2=S.logs[d];if(D.t==='flex'&&overDay(d)){$('#live').textContent='Ângulo acima do limite: sem pontos para dobrar.'}return}
+case'swell':{const l=ensureLog(ui.date),p=$('#pain'),an=$('#angle'),nt=$('#note');l.swell=+D.i;if(p&&p.dataset.t==='1')l.pain=+p.value;if(an)l.angle=an.value===''?null:+an.value;if(nt)l.note=nt.value.trim();save();break}
+case'savereg':saveReg();return;
+case'how':openHow(D.t);return;
+case'mrel':{const s=S.mapState[D.m]||(S.mapState[D.m]={});s.rel=!s.rel;if(!s.rel)s.done=false;save();break}
+case'mdone':{const s=S.mapState[D.m]||(S.mapState[D.m]={});if(s.rel)s.done=!s.done;save();break}
+case'addflex':{const last=S.plan.flex[S.plan.flex.length-1];S.plan.flex.push({from:last?addDays(last.from,7):today(),max:last?+last.max:30,ok:false});save();break}
+case'delflex':if(S.plan.flex.length>1){S.plan.flex.splice(+D.i,1);save()}break;
+case'addq':S.questions.push({t:'Nova pergunta',a:'',done:false});save();break;
+case'delq':S.questions.splice(+D.i,1);save();break;
+case'export':exportData();return;
+case'import':$('#file').click();return;
+case'reset':if(confirm('Apagar todos os dados deste aparelho? Isso não pode ser desfeito.')){S=defaults();save();ui.date=today()<START?START:today();}break;
+default:return}
+render()});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches&&e.target.matches('[data-card]')){e.preventDefault();openCard(e.target.dataset.card)}});
+document.addEventListener('change',e=>{const t=e.target;
+if(t.id==='file'&&t.files[0]){importData(t.files[0]);t.value='';return}
+if(t.dataset.ui){ui[t.dataset.ui]=+t.value;render();return}
+if(t.dataset.bind){let v=t.type==='checkbox'?t.checked:t.type==='number'?(t.value===''?0:+t.value):t.value;setPath(t.dataset.bind,v);save();const fk=t.closest('[data-fk]');render()}});
+window.__app={get S(){return S},ui,render,limitFor,dayInfo,totals,tDone,go,save};
+render();
+})();
+</script>
+</body>
+</html>
